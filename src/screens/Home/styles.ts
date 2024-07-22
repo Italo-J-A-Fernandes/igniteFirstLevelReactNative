@@ -41,5 +41,7 @@ export const styles = StyleSheet.create({
   form: {
     width: "100%",
     flexDirection: "row",
+    marginTop: 36,
+    marginBottom: 42,
   },
 });
