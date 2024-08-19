@@ -8,6 +8,10 @@ export default function Home() {
     console.log("Você clicou no botão adicionar");
   };
 
+  const handleParticipantRemove = () => {
+    console.log("Você clicou em remover participante");
+  };
+
   return (
     <View style={styles.container}>
       {/* <StatusBar style="auto" /> */}
@@ -27,8 +31,8 @@ export default function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
-      <Participant name="Italo" />
-      <Participant name="Diego" />
+      <Participant name="Italo" onRemove={handleParticipantRemove} />
+      <Participant name="Diego" onRemove={handleParticipantRemove} />
     </View>
   );
 }
